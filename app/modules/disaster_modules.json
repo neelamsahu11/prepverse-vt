@@ -1,0 +1,39 @@
+[
+  {
+    "id": "1",
+    "title": "Earthquakes",
+    "description": "Learn how to stay safe when the ground shakes. Drop, cover, and hold on!",
+    "icon": "earthquake",
+    "color": "#B9ECF7",
+    "image":"/images/earthquake.png",
+    "buttonbg":"#006B7A"
+
+  },
+  {
+    "id": "2",
+    "title": "Floods",
+    "description": "Understand rising waters and how to evacuate to high ground safely.",
+    "icon": "flood",
+    "color": "#43C7E8",
+    "image":"/images/flood.png",
+    "buttonbg":"#43C7E8"
+  },
+  {
+    "id": "3",
+    "title": "Fires",
+    "description": "Master smoke alarms, escape routes, and fire safety basics for the home.",
+    "icon": "fire",
+    "color": "#FBD8C8",
+    "image":"/images/fire.png",
+    "buttonbg":"#D85E00"
+  },
+  {
+    "id": "4",
+    "title": "Medical Emergencies",
+    "description": "Learn basic first aid, emergency response, CPR, and how to build a family emergency kit.",
+    "icon": "medical",
+    "color": "#F8D5D7",
+    "image":"/images/medical.png",
+    "buttonbg":"#D13704"
+  }
+]

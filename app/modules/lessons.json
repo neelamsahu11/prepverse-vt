@@ -1,0 +1,616 @@
+{
+  "1": {
+    "id": 1,
+    "title": "Earthquakes",
+    "image":"/images/earthquake.png",
+    "safety_cards": [
+      {
+        "number": "1",
+        "title": "DROP",
+        "text": "Drop to your hands and knees to prevent being knocked down.",
+        "icon": "⬇️"
+      },
+      {
+        "number": "2",
+        "title": "COVER",
+        "text": "Take cover under a sturdy table or desk. Cover your head and neck.",
+        "icon": "🏠"
+      },
+      {
+        "number": "3",
+        "title": "HOLD ON",
+        "text": "Hold on to your shelter until the shaking stops.",
+        "icon": "✋"
+      }
+    ],
+    "description": "Learn how to stay safe when the ground shakes. Drop, cover, and hold on!",
+    "icon": "🌎",
+    "color": "#B9ECF7",
+    "video": "/videos/earthquake.mp4",
+    "thumbnail": "/images/earthquake-thumbnail.jpeg",
+    "introduction": "An earthquake is the sudden shaking of the Earth's surface caused by the movement of tectonic plates. Earthquakes can happen without warning and may cause serious damage to buildings, roads, and other infrastructure.",
+    "causes": "Earthquakes mainly occur because of movement along faults in the Earth's crust. Tectonic plates may collide, move apart, or slide past one another, releasing stored energy as seismic waves.",
+    "types": [
+      "Tectonic earthquakes",
+      "Volcanic earthquakes",
+      "Collapse earthquakes",
+      "Induced earthquakes"
+    ],
+    "warning_signs": "Most earthquakes cannot be predicted accurately. However, unusual animal behavior or small tremors should never be considered a reliable warning of a major earthquake.",
+    "prevention": [
+      "Secure heavy furniture and appliances.",
+      "Keep breakable objects on lower shelves.",
+      "Check your building for structural weaknesses.",
+      "Learn how to turn off gas, electricity, and water if necessary."
+    ],
+    "preparedness": [
+      "Prepare an emergency kit.",
+      "Keep a flashlight and batteries available.",
+      "Store drinking water and basic food.",
+      "Create an emergency contact plan with your family.",
+      "Know the safest places in your home and workplace."
+    ],
+    "safety_equipment": [
+      "First-aid kit",
+      "Flashlight",
+      "Battery-powered radio",
+      "Emergency water",
+      "Whistle",
+      "Sturdy shoes"
+    ],
+    "what_to_do_before": [
+      "Identify safe places such as under a sturdy table.",
+      "Practice Drop, Cover, and Hold On.",
+      "Secure shelves, televisions, and heavy objects.",
+      "Keep emergency supplies where they are easy to reach."
+    ],
+    "what_to_do_during": [
+      "DROP to your hands and knees.",
+      "COVER your head and neck under a sturdy table or desk.",
+      "HOLD ON until the shaking stops.",
+      "Stay away from windows and glass.",
+      "If you are outside, move away from buildings, trees, and power lines."
+    ],
+    "what_to_do_after": [
+      "Check yourself and others for injuries.",
+      "Move carefully and watch for broken glass and damaged structures.",
+      "Leave damaged buildings if it is safe to do so.",
+      "Expect possible aftershocks.",
+      "Follow instructions from emergency authorities."
+    ],
+    "evacuation": [
+      "Use designated evacuation routes.",
+      "Do not use elevators in damaged buildings.",
+      "Move to an open and safe area.",
+      "Help children, older adults, and injured people when possible."
+    ],
+    "common_mistakes": [
+      "Running outside while the ground is shaking.",
+      "Standing near windows.",
+      "Using elevators.",
+      "Ignoring aftershocks.",
+      "Returning to a damaged building without permission."
+    ],
+    "myths_and_facts": [
+      {
+        "myth": "Earthquakes can always be predicted.",
+        "fact": "Scientists cannot reliably predict the exact time, location, and magnitude of an earthquake."
+      },
+      {
+        "myth": "Standing in a doorway is always the safest option.",
+        "fact": "A sturdy table or desk is generally a better place to take cover."
+      },
+      {
+        "myth": "You should run outside immediately.",
+        "fact": "During shaking, staying inside and using Drop, Cover, and Hold On is usually safer."
+      }
+    ],
+    "emergency_response": [
+      "Call local emergency services when necessary.",
+      "Provide basic first aid if you are trained.",
+      "Stay informed through official emergency announcements.",
+      "Avoid damaged roads, bridges, and buildings."
+    ]
+},
+"2": {
+  "id": 4,
+  "title": "Flood Safety",
+  "image":"/images/flood.png",
+  "color":"#43C7E8",
+    "safety_cards": [
+      {
+        "number": "1",
+        "title": "MOVE HIGH",
+        "text": "Move to higher ground when floodwater starts rising.",
+        "icon": "⬆️"
+      },
+      {
+        "number": "2",
+        "title": "AVOID WATER",
+        "text": "Never walk or drive through moving floodwater.",
+        "icon": "🚫"
+      },
+      {
+        "number": "3",
+        "title": "FOLLOW ALERTS",
+        "text": "Follow evacuation instructions from local authorities.",
+        "icon": "📢"
+      }
+    ],
+  "icon": "🌊",
+  "video": "/videos/earthquake.mp4",
+  "thumbnail": "/images/FloodSafety-thumbnail.png",
+
+  "introduction": "A flood occurs when water covers land that is normally dry. Floods can develop slowly or happen suddenly due to heavy rainfall, overflowing rivers, storm surges, dam or embankment failures, poor drainage and rapid snowmelt. Floodwater can cause drowning, injuries, structural damage, electrical hazards and contamination.",
+
+  "causes": [
+    "Heavy or prolonged rainfall",
+    "Overflowing rivers and streams",
+    "Flash floods",
+    "Cyclones and storm surges",
+    "Dam or embankment failures",
+    "Poor drainage systems",
+    "Urban flooding",
+    "Blocked drains and waterways",
+    "Rapid snowmelt",
+    "Coastal flooding",
+    "Sudden release of water from reservoirs",
+    "Deforestation and loss of natural drainage areas"
+  ],
+
+  "types": [
+    "Flash Flood - Rapid flooding that can occur within minutes or hours of heavy rainfall or sudden water release",
+    "River Flood - Occurs when rivers and streams overflow their banks",
+    "Urban Flood - Occurs when drainage systems cannot handle heavy rainfall",
+    "Coastal Flood - Occurs when seawater moves onto normally dry coastal land",
+    "Pluvial Flood - Surface flooding caused by rainfall that cannot drain away",
+    "Dam or Embankment Failure - Flooding caused by the sudden release of stored water"
+  ],
+
+  "warning_signs": [
+    "Continuous or extremely heavy rainfall",
+    "Rapidly rising water levels",
+    "Overflowing rivers or streams",
+    "Flood warnings or emergency alerts",
+    "Water entering roads, buildings or low-lying areas",
+    "Blocked or overflowing drains",
+    "Strong water currents",
+    "Dam or embankment damage",
+    "Sudden changes in water level",
+    "Instructions to evacuate"
+  ],
+
+  "prevention": [
+    "Keep drains and waterways free from waste.",
+    "Do not throw garbage into drains or rivers.",
+    "Avoid construction in flood-prone areas where possible.",
+    "Maintain proper drainage around buildings.",
+    "Protect important documents and equipment from water damage.",
+    "Follow local flood-management guidelines.",
+    "Plant and protect vegetation that helps reduce soil erosion and runoff.",
+    "Maintain dams, embankments and drainage infrastructure through responsible authorities."
+  ],
+
+  "preparedness": [
+    "Know whether your area is flood-prone.",
+    "Identify safe higher ground and evacuation routes.",
+    "Keep an emergency kit ready.",
+    "Store drinking water and essential medicines.",
+    "Keep important documents in waterproof containers.",
+    "Keep a battery-powered or charged emergency communication device available.",
+    "Monitor official weather and emergency alerts.",
+    "Know the location of nearby shelters or designated safe areas.",
+    "Keep emergency contact numbers easily accessible.",
+    "Plan how family members will communicate during an emergency."
+  ],
+
+  "what_to_do_before": [
+    "Monitor official weather and flood warnings.",
+    "Move valuable items and electrical equipment to higher locations.",
+    "Secure outdoor objects that could be swept away.",
+    "Prepare an emergency bag with water, food, medicines, flashlight and important documents.",
+    "Charge phones and emergency power banks.",
+    "Move vehicles to safer, higher ground if instructed and if it can be done safely.",
+    "Follow evacuation instructions from authorities.",
+    "Avoid unnecessary travel through flood-prone areas."
+  ],
+
+  "what_to_do_during": [
+    "Stay calm and follow official instructions.",
+    "Move to higher ground if flooding is occurring.",
+    "Evacuate immediately when authorities instruct you to do so.",
+    "Never walk, swim or play in moving floodwater.",
+    "Never drive through flooded roads.",
+    "Avoid bridges and areas where water is flowing rapidly.",
+    "Stay away from fallen electrical wires and electrical equipment exposed to water.",
+    "Do not touch electrical equipment if you are standing in water.",
+    "Keep away from damaged buildings and structures.",
+    "Drink only safe or properly treated water.",
+    "Follow emergency alerts and instructions.",
+    "Do not return home until authorities say it is safe."
+  ],
+
+  "what_to_do_after": [
+    "Wait for official confirmation before returning home.",
+    "Avoid standing water because it may contain sewage, chemicals or dangerous debris.",
+    "Stay away from damaged electrical systems.",
+    "Do not use electrical appliances that have been exposed to water until they have been inspected.",
+    "Use safe drinking water and food.",
+    "Clean and disinfect areas affected by floodwater when it is safe to do so.",
+    "Report damaged infrastructure and dangerous conditions to authorities.",
+    "Watch for structural damage, contaminated water and other hazards.",
+    "Continue following official emergency instructions."
+  ],
+
+  "evacuation": [
+    "Follow official evacuation orders immediately.",
+    "Use designated evacuation routes.",
+    "Move toward higher and safer ground.",
+    "Take your emergency kit and essential documents if there is enough time.",
+    "Do not take shortcuts through flooded roads.",
+    "Never drive through moving or unknown-depth floodwater.",
+    "Help children, elderly people and people who need assistance when it is safe to do so.",
+    "Go to the designated shelter or assembly point.",
+    "Do not return until authorities confirm that it is safe."
+  ],
+
+  "common_mistakes": [
+    "Walking through fast-moving floodwater.",
+    "Driving through flooded roads.",
+    "Underestimating shallow-looking water.",
+    "Playing or swimming in floodwater.",
+    "Touching fallen electrical wires.",
+    "Using electrical appliances while standing in water.",
+    "Ignoring evacuation warnings.",
+    "Returning home before authorities declare the area safe.",
+    "Drinking untreated or contaminated water.",
+    "Entering damaged buildings without checking their safety.",
+    "Relying only on social media instead of official emergency information."
+  ],
+
+  "myths_and_facts": [
+    {
+      "myth": "Shallow floodwater is always safe to walk through.",
+      "fact": "Even shallow moving water can knock a person down or hide dangerous objects, holes and contamination."
+    },
+    {
+      "myth": "A vehicle can safely cross any flooded road if the water does not look very deep.",
+      "fact": "Floodwater can hide road damage and strong currents can move vehicles."
+    },
+    {
+      "myth": "Floodwater is safe if it looks clean.",
+      "fact": "Floodwater may contain sewage, chemicals, debris and harmful microorganisms even when it appears clean."
+    },
+    {
+      "myth": "You should return home as soon as the water starts going down.",
+      "fact": "Flooded areas may still contain structural, electrical and contamination hazards after water levels fall."
+    },
+    {
+      "myth": "You only need to prepare after flooding begins.",
+      "fact": "Preparing an emergency kit, evacuation plan and communication plan before flooding can save valuable time."
+    }
+  ],
+
+  "emergency_response": [
+    "Receive flood warning",
+    "Stay calm",
+    "Monitor official alerts",
+    "Prepare emergency supplies",
+    "Move to higher ground when necessary",
+    "Follow evacuation instructions",
+    "Avoid floodwater",
+    "Avoid flooded roads and bridges",
+    "Stay away from electrical hazards",
+    "Go to the designated shelter or safe location",
+    "Wait for official instructions",
+    "Do not return until authorities say it is safe"
+  ]
+},
+"3": {
+    "id": 3,
+    "title": "Fire Safety",
+    "image":"/images/fire.png",
+      "safety_cards": [
+      {
+        "number": "1",
+        "title": "STAY CALM",
+        "text": "Stay calm and alert others about the fire immediately.",
+        "icon": "🧘"
+      },
+      {
+        "number": "2",
+        "title": "USE EXIT",
+        "text": "Use the nearest safe exit and never use an elevator.",
+        "icon": "🚪"
+      },
+      {
+        "number": "3",
+        "title": "CRAWL LOW",
+        "text": "Stay low to the ground to avoid breathing in smoke.",
+        "icon": "🧎"
+      }
+    ],
+    "icon": "🔥",
+    "color": "#FBD8C8",
+    "video": "/videos/earthquake.mp4",
+    "thumbnail": "/images/FireSafety-thumbnail.png",
+    "introduction": "Fire is a chemical reaction called combustion in which a fuel reacts with oxygen and releases heat and light. The fire triangle consists of heat, fuel and oxygen. A more advanced fire tetrahedron adds the chemical chain reaction.",
+    "causes": [
+      "Electrical short circuits",
+      "Overloaded electrical outlets",
+      "Damaged wires",
+      "Cooking accidents",
+      "LPG or gas leaks",
+      "Candles and lamps",
+      "Smoking materials",
+      "Flammable liquids",
+      "Machinery overheating",
+      "Improper storage of combustible materials",
+      "Laboratory accidents",
+      "Sparks from equipment",
+      "Lightning",
+      "Battery or charging-related incidents"
+    ],
+    "types": [
+      "Class A - Ordinary solid combustibles such as wood, paper and cloth",
+      "Class B - Flammable liquids such as petrol, diesel and paints",
+      "Class C - Flammable gases such as LPG, propane and butane",
+      "Class D - Combustible metals such as magnesium and sodium",
+      "Electrical - Energized electrical equipment such as wiring, computers and electrical panels",
+      "Class K/F - Cooking oils and fats"
+    ],
+    "warning_signs": [
+      "Smoke or visible fire",
+      "Burning smells",
+      "Sparks from electrical equipment",
+      "Overheating equipment",
+      "Gas or LPG leaks",
+      "Fire spreading rapidly",
+      "Heavy smoke",
+      "A threatened or blocked exit"
+    ],
+    "prevention": [
+      "Avoid overloaded electrical outlets.",
+      "Replace damaged wires.",
+      "Store combustible materials properly.",
+      "Handle cooking equipment carefully.",
+      "Address LPG or gas leaks safely.",
+      "Store flammable liquids appropriately.",
+      "Prevent machinery overheating.",
+      "Maintain safe laboratory, workshop, kitchen, classroom, hostel and computer-room practices."
+    ],
+    "preparedness": [
+      "Know designated evacuation routes.",
+      "Know the assembly point.",
+      "Know your institution's emergency procedure.",
+      "Learn the appropriate extinguisher for different hazards.",
+      "Check extinguisher labels and ratings.",
+      "Keep an exit behind you when attempting to use an extinguisher.",
+      "Only attempt a small, contained fire if trained and it is safe to do so."
+    ],
+    "what_to_do_before": [
+      "Identify the fuel and check the extinguisher label and rating.",
+      "Raise the alarm.",
+      "Ensure emergency services have been contacted according to the institution's procedure.",
+      "Keep an exit behind you.",
+      "Make sure the fire is small and contained before considering extinguisher use."
+    ],
+    "what_to_do_during": [
+      "Stay calm.",
+      "Raise the alarm.",
+      "Inform people nearby.",
+      "Call the emergency service according to your local or institutional procedure.",
+      "Evacuate using the designated route.",
+      "Do not use elevators during a fire unless specifically directed by emergency personnel.",
+      "Stay low if smoke is present.",
+      "Follow emergency instructions.",
+      "Go to the assembly point.",
+      "Do not re-enter until authorities say it is safe."
+    ],
+    "what_to_do_after": [
+      "Remain at the assembly point.",
+      "Do not re-enter until authorities say it is safe.",
+      "Follow emergency instructions.",
+      "Treat people first and property second."
+    ],
+    "evacuation": [
+      "Raise the alarm and inform people nearby.",
+      "Use the designated evacuation route.",
+      "Do not normally use elevators during a fire evacuation.",
+      "Stay low if smoke is present.",
+      "Go to the assembly point.",
+      "Do not re-enter until authorities say it is safe."
+    ],
+    "common_mistakes": [
+      "Trying to fight a rapidly spreading fire.",
+      "Attempting to fight a large fire.",
+      "Trying to fight a fire with heavy smoke.",
+      "Fighting when the exit could become blocked.",
+      "Fighting when you do not know what is burning.",
+      "Using the wrong extinguisher.",
+      "Attempting firefighting without training.",
+      "Attempting firefighting when an explosion risk exists.",
+      "Attempting firefighting when a gas cylinder or tank may be involved.",
+      "Treating an extinguisher as a replacement for evacuation."
+    ],
+    "myths_and_facts": [
+      {
+        "myth": "A fire extinguisher can replace evacuation.",
+        "fact": "Fire extinguishers are not a replacement for evacuation."
+      },
+      {
+        "myth": "Any extinguisher can be used on any fire.",
+        "fact": "The correct extinguisher must be selected according to the fuel, label and rating."
+      },
+      {
+        "myth": "Water is suitable for every fire.",
+        "fact": "Water should not be used on energized electrical equipment or flammable-liquid fires."
+      },
+      {
+        "myth": "You should fight every fire if you have an extinguisher.",
+        "fact": "Do not fight a fire if it is large, spreading, smoky, unsafe, untrained or otherwise beyond safe control."
+      }
+    ],
+    "emergency_response": [
+      "Discover fire",
+      "Stay calm",
+      "Raise the alarm",
+      "Inform people nearby",
+      "Call emergency services according to local or institutional procedure",
+      "Evacuate",
+      "Go to the assembly point",
+      "Do not re-enter until authorities say it is safe"
+    ]
+  }
+,
+  "4": {
+    "id": 4,
+    "title": "Medical Emergency & First Aid",
+    "image":"/images/medical.png",
+    "color": "#F8D5D7",
+    "safety_cards": [
+      {
+        "number": "1",
+        "title": "CHECK",
+        "text": "Check the person's condition and make sure the area is safe before helping.",
+        "icon": "🔍"
+      },
+      {
+        "number": "2",
+        "title": "CALL FOR HELP",
+        "text": "Call emergency medical services and ask someone nearby to get help.",
+        "icon": "📞"
+      },
+      {
+        "number": "3",
+        "title": "GIVE FIRST AID",
+        "text": "Provide appropriate first aid while waiting for professional medical help.",
+        "icon": "🩹"
+      }],
+    "icon": "🩹",
+    "video": "/videos/medical-first-aid.mp4",
+    "thumbnail": "/images/MedicalSafety-thumbnail.png",
+    "introduction": "First aid is the immediate and basic assistance provided to a person who is injured or suddenly becomes ill until professional medical help becomes available.",
+    "causes": [
+      "Injuries and sudden illness",
+      "Disaster-related injuries",
+      "Falls and accidents",
+      "Fire and burn injuries",
+      "Drowning and electrical injuries",
+      "Breathing emergencies",
+      "Heat emergencies and dehydration",
+      "Poisoning"
+    ],
+    "types": [
+      "CPR and AED emergencies",
+      "Severe bleeding and fractures",
+      "Burns and scalds",
+      "Drowning and electrical injuries",
+      "Choking and breathing emergencies",
+      "Head injuries, seizures and shock",
+      "Heat emergencies, dehydration and poisoning",
+      "Emergency medical kit, hygiene and psychological support"
+    ],
+    "warning_signs": [
+      "Unresponsiveness or abnormal breathing",
+      "Severe bleeding",
+      "Difficulty breathing",
+      "Severe airway obstruction",
+      "Loss of consciousness",
+      "Confusion",
+      "Severe or worsening headache",
+      "Repeated vomiting",
+      "Seizures",
+      "Pale or clammy skin, weakness, dizziness or rapid breathing",
+      "Heat exhaustion symptoms such as heavy sweating, weakness, dizziness, headache and nausea"
+    ],
+    "prevention": [
+      "Check that the scene is safe before helping.",
+      "Do not become the second victim.",
+      "Learn CPR and AED procedures through qualified hands-on training.",
+      "Use gloves or barriers when available.",
+      "Practice drowning prevention and safe rescue principles.",
+      "Maintain hygiene and safe handling of blood and body fluids.",
+      "Keep first-aid supplies available and check expiry dates."
+    ],
+    "preparedness": [
+      "Keep an emergency medical kit available.",
+      "Know emergency contact information.",
+      "Know how to provide the location and condition of an emergency.",
+      "Understand basic CPR/AED awareness.",
+      "Prepare for heat waves, floods, long evacuations and water shortages.",
+      "Maintain first-aid kit inventory, expiry checking and restocking."
+    ],
+    "what_to_do_before": [
+      "Check the scene for danger.",
+      "Assess whether the person is responsive.",
+      "Check the airway and breathing.",
+      "Look for severe or critical bleeding.",
+      "Call for professional medical assistance when required."
+    ],
+    "what_to_do_during": [
+      "Check → Call → Provide appropriate first aid → Monitor.",
+      "For severe bleeding, use appropriate barriers and apply firm direct pressure.",
+      "For suspected fractures, keep the area as still as reasonably possible and do not straighten it.",
+      "For minor thermal burns, safely move away from the heat source and cool the affected area with cool running water.",
+      "For seizures, keep the area safe, remove hazards, protect the person's head if possible and monitor them.",
+      "Do not restrain a person having a seizure or put anything in their mouth.",
+      "Never touch a person who may still be connected to an electrical source until the hazard is safely isolated."
+    ],
+    "what_to_do_after": [
+      "Monitor the person while waiting for professional medical help.",
+      "Follow emergency operator instructions.",
+      "Seek professional medical assessment for serious head injuries, serious burns, severe bleeding, fractures and other emergencies.",
+      "Encourage professional support when psychological support is needed."
+    ],
+    "evacuation": [
+      "Follow emergency instructions.",
+      "Move away from continuing hazards such as fire, electricity, chemicals, floodwater or unstable buildings.",
+      "Do not enter dangerous water to rescue another person unless properly trained and equipped.",
+      "Provide the emergency operator with the exact location and relevant hazards."
+    ],
+    "common_mistakes": [
+      "Helping without checking whether the scene is safe.",
+      "Trying to straighten a suspected fracture.",
+      "Applying ice directly to a burn.",
+      "Applying toothpaste, butter, oil or household substances to a burn.",
+      "Breaking blisters.",
+      "Entering dangerous water without proper training and equipment.",
+      "Touching someone who may still be connected to an electrical source.",
+      "Restraining someone during a seizure.",
+      "Putting something in a person's mouth during a seizure.",
+      "Automatically inducing vomiting in a suspected poisoning."
+    ],
+    "myths_and_facts": [
+      {
+        "myth": "Ice should be applied directly to a burn.",
+        "fact": "The module recommends cooling a minor thermal burn with cool running water and specifically says not to apply ice directly."
+      },
+      {
+        "myth": "A suspected fracture should be straightened.",
+        "fact": "Do not try to straighten a suspected fracture; keep the injured area as still as reasonably possible."
+      },
+      {
+        "myth": "You should enter dangerous water to rescue someone.",
+        "fact": "Do not enter dangerous water unless properly trained and equipped."
+      },
+      {
+        "myth": "You should restrain someone during a seizure.",
+        "fact": "Do not restrain them; keep the area safe and monitor the person."
+      },
+      {
+        "myth": "Vomiting should automatically be induced after poisoning.",
+        "fact": "The module specifically says not to automatically induce vomiting."
+      }
+    ],
+    "emergency_response": [
+      "INCIDENT",
+      "Check for danger",
+      "Assess the person",
+      "Call for help",
+      "Provide appropriate first aid",
+      "Monitor the person",
+      "Professional medical care"
+    ]
+  }
+}
