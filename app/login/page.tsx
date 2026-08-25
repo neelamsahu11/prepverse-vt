@@ -8,48 +8,56 @@ import { useRouter } from "next/navigation";
 
 
 interface LoginFormData {
-    email: string;
-    password: string;
+  email: string;
+  password: string;
+  role:string;
 }
 
 const Login: React.FC = () => {
-    
-    const router = useRouter();
 
-    const [formData, setFormData] = useState<LoginFormData>({
-        email: "",
-        password: "",
-    });
+  const router = useRouter();
 
-    const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState<LoginFormData>({
+    email: "",
+    password: "",
+    role:"user",
+  });
 
-    const handleInputChange = (name: string, value: string) => {
-        setFormData((prev) => ({
-            ...prev,
-            [name]: value,
-        }));
-    };
+  const [message, setMessage] = useState("");
 
-const handleSubmit = async (e: FormEvent) => {
+  const handleInputChange = (name: string, value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
     const LoginData = {
-        email: formData.email.trim(),
-        password: formData.password.trim(),
+      email: formData.email.trim(),
+      password: formData.password.trim(),
+      role: formData.role,
     };
 
     const result = await LoginAction(LoginData);
 
-   if (result.success) {
-    router.push("/dashboard");
-    router.refresh();
-} else {
-    alert(result.message);
-}
-};
+    if (result.success) {
 
-    return (
-         <div className="min-h-screen bg-[#e8f4ff] px-6 py-10">
+      if (result.role === "admin") {
+        router.push("/admin");
+      } else {
+        router.push("/");
+      }
+
+    } else {
+      alert(result.message);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-[#e8f4ff] px-6 py-10">
 
       <div className="mx-auto flex min-h-[90vh] max-w-6xl items-center justify-center">
 
@@ -110,6 +118,20 @@ const handleSubmit = async (e: FormEvent) => {
             <form onSubmit={handleSubmit} className="space-y-6">
 
               {/* Email */}
+
+              <div><label className="font-bold">Role</label>
+
+                <select
+                  name="role"
+                  value={formData.role}
+                  onChange={(e) =>
+                    handleInputChange("role", e.target.value)
+                  }
+                  className="rounded-xl border-2 border-black px-4 py-3"
+                >
+                  <option value="user">User</option>
+                  <option value="admin">Admin</option>
+                </select></div>
               <div>
                 <label className="mb-2 block text-sm font-black">
                   Email
@@ -184,7 +206,7 @@ const handleSubmit = async (e: FormEvent) => {
       </div>
 
     </div>
-    );
+  );
 };
 
 export default Login;

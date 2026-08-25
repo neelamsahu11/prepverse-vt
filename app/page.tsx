@@ -39,6 +39,7 @@ export default function Home() {
     <div className="mt-7 flex flex-col items-center gap-4 sm:flex-row sm:justify-center lg:justify-start">
 
       <button
+      onClick={() => router.push("/modules")}
         className="
           w-full
           rounded-full

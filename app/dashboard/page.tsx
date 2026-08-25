@@ -137,7 +137,7 @@ return (
 
     {/* Emergency */}
     <Link
-      href="/emergency"
+      href="/EmergencyContact"
       className="mt-6 flex items-center gap-3 rounded-xl border-2 border-[#b9a19d] bg-[#f8dfe0] px-4 py-3 font-serif font-bold text-[#9a4843] transition hover:bg-[#f5d4d5]"
     >
       <span className="text-lg">

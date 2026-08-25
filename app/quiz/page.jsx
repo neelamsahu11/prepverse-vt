@@ -1,4 +1,4 @@
-n"use client";
+"use client";
 import React from 'react'
 import module from './quizModule.json' // adjust path to where disaster_modules.json actually lives
 import Link from 'next/link'

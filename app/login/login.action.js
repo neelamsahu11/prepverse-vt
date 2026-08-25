@@ -15,7 +15,9 @@ export default async function LoginAction(formData) {
         }
 
         const [users] = await pool.execute(
-            "SELECT id, name, email, password FROM users WHERE email = ?",
+            `SELECT id, name, email, password, role
+             FROM users
+             WHERE email = ?`,
             [email]
         );
 
@@ -35,7 +37,7 @@ export default async function LoginAction(formData) {
             };
         }
 
-        // Store user ID in cookie
+        // Store user ID
         const cookieStore = await cookies();
 
         cookieStore.set("userId", String(user.id), {
@@ -45,9 +47,18 @@ export default async function LoginAction(formData) {
             path: "/",
         });
 
+        // Store role
+        cookieStore.set("userRole", user.role, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "lax",
+            path: "/",
+        });
+
         return {
             success: true,
             message: "Login successful",
+            role: user.role,
         };
 
     } catch (error) {

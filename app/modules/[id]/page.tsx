@@ -2,11 +2,49 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import lessons from "../lessons.json"; // adjust path to where lessons.json actually lives
+import lessonsData from "../lessons.json";
+
+const lessons = lessonsData as Record<string, Lesson>; // adjust path to where lessons.json actually lives
+
+
+type VisualGuide = {
+  id: string;
+  image: string;
+};
+
+type Lesson = {
+  id: number;
+  title: string;
+  image: string;
+  color?: string;
+  visual_Guide?: VisualGuide[];
+  introduction?: string;
+  causes?: string | string[];
+  types?: string | string[];
+  warning_signs?: string | string[];
+  prevention?: string | string[];
+  preparedness?: string | string[];
+  what_to_do_before?: string | string[];
+  what_to_do_during?: string | string[];
+  what_to_do_after?: string | string[];
+  evacuation?: string | string[];
+  common_mistakes?: string | string[];
+  myths_and_facts?: string | object[];
+  emergency_response?: string | string[];
+  safety_cards?: {
+    number: string;
+    title: string;
+    text: string;
+    icon: string;
+  }[];
+  video?: string;
+  thumbnail?: string;
+};
 
 const ModuleDetails = () => {
   const { id } = useParams();
   const module = lessons[id];
+  
 
   const [activeSection, setActiveSection] = useState("introduction");
 
@@ -236,6 +274,36 @@ const ModuleDetails = () => {
               content={module.what_to_do_before}
             />
 
+  {module.visual_Guide && (
+  <section
+    id="visual_guide"
+    className="py-7 border-b border-gray-200 scroll-mt-6"
+  >
+    <SectionTitle
+      icon="👀"
+      title="Visual Guide"
+    />
+
+    <p className="mb-5 text-sm text-gray-600 sm:text-base">
+      Learn the important safety steps through these visuals.
+    </p>
+
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {module.visual_Guide.map((guide: VisualGuide) => (
+        <div
+          key={guide.id}
+          className="overflow-hidden rounded-2xl border-2 border-[#B9E8EE] bg-[#F1FBFC] shadow-sm"
+        >
+          <img
+            src={guide.image}
+            alt={`Visual guide step ${guide.id}`}
+            className="block h-56 w-full object-contain"
+          />
+        </div>
+      ))}
+    </div>
+  </section>
+)}
             <section
               id="what_to_do_during"
               className="
@@ -265,6 +333,8 @@ const ModuleDetails = () => {
               {module.what_to_do_during && (
                 <ContentText content={module.what_to_do_during} />
               )}
+              
+
 
             </section>
 

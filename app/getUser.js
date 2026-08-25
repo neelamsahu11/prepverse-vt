@@ -16,6 +16,7 @@ export async function getLoggedInUser() {
            `SELECT
                 u.id,
                 u.name,
+                u.role,
                 u.email,
                 p.modules_completed,
                 p.quiz_score,

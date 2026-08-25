@@ -3,6 +3,33 @@
     "id": 1,
     "title": "Earthquakes",
     "image":"/images/earthquake.png",
+   "visual_Guide": [
+  {
+    "id": "1",
+    "image": "/images/visual-guide/image1.png"
+  },
+  {
+    "id": "2",
+    "image": "/images/visual-guide/image2.png"
+  },
+  {
+    "id": "3",
+    "image": "/images/visual-guide/image3.png"
+  },
+  {
+    "id": "4",
+    "image": "/images/visual-guide/image4.png"
+  },
+  {
+    "id": "5",
+    "image": "/images/visual-guide/image5.png"
+  },
+  {
+    "id": "6",
+    "image": "/images/visual-guide/image6.png"
+  }
+],
+  
     "safety_cards": [
       {
         "number": "1",
@@ -115,6 +142,33 @@
 "2": {
   "id": 4,
   "title": "Flood Safety",
+
+    "visual_Guide": [
+  {
+    "id": "1",
+    "image": "/images/visual-guide/image7.png"
+  },
+  {
+    "id": "2",
+    "image": "/images/visual-guide/image8.png"
+  },
+  {
+    "id": "3",
+    "image": "/images/visual-guide/image9.png"
+  },
+  {
+    "id": "4",
+    "image": "/images/visual-guide/image10.png"
+  },
+  {
+    "id": "5",
+    "image": "/images/visual-guide/image11.png"
+  },
+  {
+    "id": "6",
+    "image": "/images/visual-guide/image12.png"
+  }
+],
   "image":"/images/flood.png",
   "color":"#43C7E8",
     "safety_cards": [
@@ -309,6 +363,32 @@
 "3": {
     "id": 3,
     "title": "Fire Safety",
+      "visual_Guide": [
+  {
+    "id": "1",
+    "image": "/images/visual-guide/image13.png"
+  },
+  {
+    "id": "2",
+    "image": "/images/visual-guide/image14.png"
+  },
+  {
+    "id": "3",
+    "image": "/images/visual-guide/image15.png"
+  },
+  {
+    "id": "4",
+    "image": "/images/visual-guide/image16.png"
+  },
+  {
+    "id": "5",
+    "image": "/images/visual-guide/image17.png"
+  },
+  {
+    "id": "6",
+    "image": "/images/visual-guide/image18.png"
+  }
+],
     "image":"/images/fire.png",
       "safety_cards": [
       {
@@ -468,6 +548,32 @@
     "title": "Medical Emergency & First Aid",
     "image":"/images/medical.png",
     "color": "#F8D5D7",
+      "visual_Guide": [
+  {
+    "id": "1",
+    "image": "/images/visual-guide/image19.png"
+  },
+  {
+    "id": "2",
+    "image": "/images/visual-guide/image20.png"
+  },
+  {
+    "id": "3",
+    "image": "/images/visual-guide/image21.png"
+  },
+  {
+    "id": "4",
+    "image": "/images/visual-guide/image22.png"
+  },
+  {
+    "id": "5",
+    "image": "/images/visual-guide/image23.png"
+  },
+  {
+    "id": "6",
+    "image": "/images/visual-guide/image24.png"
+  }
+],
     "safety_cards": [
       {
         "number": "1",
