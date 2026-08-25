@@ -288,6 +288,7 @@ const ModuleDetails = () => {
               </span>{" "}
               Stay calm and don't rush outside. Follow safety instructions.
             </div>
+              <Link href={`/quiz/${id}`} className="block border border-black w-40 mt-5 text-black text-center py-2.5 rounded-3xl hover:bg-pink-800 transition" >Start Quiz</Link>
 
           </main>
 
@@ -446,8 +447,12 @@ const SafetyCard = ({ number, title, text, icon,
           </p>
 
           <p className="text-sm text-gray-600 mt-1 leading-5">
-            {text}
+            {text} 
           </p>
+
+
+
+         
 
         </div>
 

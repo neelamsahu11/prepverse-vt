@@ -1,68 +1,75 @@
+"use client";
 
-'use client'
+import React, { useState } from "react";
+import QuizSubmit from "./quizsubmit";
 
-import { useState } from "react"
-import { submitQuiz } from "./quiz.action"
+const QuizClient = ({ module, questions }) => {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
 
-export default function QuizClient({question}){
-    const [currentIndex,setCurrentIndex] = useState(0)
-    const [answers,setAnswers] = useState({})
-    const [result, setResult] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const question = questions[currentQuestion];
 
-    const currentQuestion = question[currentIndex]
-    const isLastQuestion = currentIndex === question.length - 1;
-    const hasAnswered = answers[currentQuestion?.id] !== undefined;
-
-      const handleSelect = (qId, option) => {
-    setAnswers((prev) => ({ ...prev, [qId]: option }));
+  const handleAnswer = (option) => {
+    setSelectedAnswer(option);
   };
 
-    const handleBack = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prev) => prev - 1);
-    }
-  };
-    const handleNext = () => {
-    if (!isLastQuestion ) {
-      setCurrentIndex((prev) => prev + 1);
-    }
-  };
-   const handleSubmit = async () => {
-    setLoading(true);
-    const res = await submitQuiz(answers);
-    setResult(res);
-    setLoading(false);
-  };
+  const handleNext = () => {
+  if (!selectedAnswer) return;
 
-  if (result) {
+  const isCorrect =
+    selectedAnswer === question.correct_answer;
+
+  const newScore = isCorrect
+    ? score + 1
+    : score;
+
+  if (currentQuestion < questions.length - 1) {
+
+    setScore(newScore);
+    setCurrentQuestion((prev) => prev + 1);
+    setSelectedAnswer(null);
+
+  } else {
+
+    // Save the final score correctly
+    setScore(newScore);
+    setShowResult(true);
+  }
+};
+
+  if (showResult) {
     return (
-     <div className="min-h-screen bg-[#e8f4ff] flex items-center justify-center px-6 py-12">
+      <div className="min-h-screen bg-gradient-to-br from-[#E0F7FA] via-white to-[#F0FDF4] flex items-center justify-center px-4">
 
-        <div className="w-full max-w-2xl rounded-3xl border-2 border-black bg-white p-10 text-center shadow-[6px_7px_0px_#000]">
+        <div className="bg-white rounded-2xl shadow-lg p-8 text-center max-w-md w-full">
 
-          <p className="mb-3 text-sm font-black tracking-widest text-blue-600">
-            QUIZ COMPLETED
+          <h1 className="text-3xl font-bold text-[#006B7A] mb-4">
+            Quiz Completed!
+          </h1>
+
+          <p className="text-xl font-semibold text-gray-700">
+            {module}
           </p>
 
-          <h2 className="text-5xl font-black">
-            <span className="text-blue-600">{result.score}</span>
-            <span className="text-slate-400"> / {result.total}</span>
-          </h2>
-
-          <p className="mt-3 text-slate-500">
-            Great job! Try again to improve your score.
+          <p className="text-2xl font-bold mt-4">
+            Score: {score} / {questions.length}
           </p>
+
+          <div className="mt-6">
+            <QuizSubmit
+              moduleName={module}
+              score={score}
+              total={questions.length}
+            />
+          </div>
 
           <button
-            onClick={() => {
-              setResult(null)
-              setAnswers({})
-              setCurrentIndex(0)
-            }}
-            className="mt-8 rounded-full border-2 border-black bg-amber-400 px-8 py-3 font-black shadow-[4px_5px_0px_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_3px_0px_#000]"
+            onClick={() => window.location.reload()}
+            className="mt-4 bg-gray-200 text-gray-800 px-6 py-3 rounded-xl"
           >
-            Retry Quiz ↻
+            Try Again
           </button>
 
         </div>
@@ -70,142 +77,67 @@ export default function QuizClient({question}){
       </div>
     );
   }
-   return(
-    <div className="min-h-screen bg-[#e8f4ff] px-6 py-12">
 
-      <div className="mx-auto max-w-3xl">
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-[#E0F7FA] via-white to-[#F0FDF4] py-10 px-4">
+
+      <div className="max-w-3xl mx-auto">
 
         {/* Quiz Header */}
+        <div className="bg-white rounded-2xl shadow-md p-6 mb-6">
 
-        <div className="mb-6 flex items-center justify-between">
+          <h1 className="text-3xl font-bold text-[#006B7A]">
+            {module}
+          </h1>
 
-          <div>
-            <p className="text-sm font-black tracking-widest text-blue-600">
-              DISASTER MANAGEMENT
-            </p>
-
-            <h1 className="text-3xl font-black">
-              Knowledge Quiz
-            </h1>
-          </div>
-
-          <p className="rounded-full border-2 border-black bg-white px-5 py-2 font-black shadow-[3px_4px_0px_#000]">
-            {currentIndex + 1} / {question.length}
+          <p className="text-gray-500 mt-2">
+            Question {currentQuestion + 1} of {questions.length}
           </p>
 
         </div>
 
+        {/* Question */}
+        <div className="bg-white rounded-2xl shadow-md p-6">
 
-        {/* Progress Bar */}
-
-        <div className="mb-8 h-4 overflow-hidden rounded-full border-2 border-black bg-white">
-
-          <div
-            className="h-full bg-blue-500 transition-all duration-300"
-            style={{
-              width: `${((currentIndex + 1) / question.length) * 100}%`
-            }}
-          />
-
-        </div>
-
-
-        {/* Question Card */}
-
-        <div className="rounded-3xl border-2 border-black bg-white p-8 shadow-[6px_7px_0px_#000]">
-
-          {/* Question Number */}
-
-          <p className="mb-6 inline-block rounded-full border-2 border-black bg-amber-300 px-4 py-2 text-sm font-black shadow-[2px_3px_0px_#000]">
-            Question {currentIndex + 1}
-          </p>
-
-
-          {/* Question */}
-
-          <div className="mb-8">
-
-            <p className="text-2xl font-black leading-relaxed">
-              {currentQuestion.question_text}
-            </p>
-
-          </div>
-
+          <h2 className="text-xl font-semibold text-gray-800 mb-6">
+            {question.question}
+          </h2>
 
           {/* Options */}
-
           <div className="space-y-4">
 
-            {['a', 'b', 'c', 'd'].map((opt) => {
+            {question.options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(option)}
+                className={`w-full text-left p-4 rounded-xl border-2 transition ${
+                  selectedAnswer === option
+                    ? "border-[#00B4D4] bg-[#E0F7FA]"
+                    : "border-gray-200 hover:border-[#00B4D4]"
+                }`}
+              >
+                <span className="font-bold mr-3">
+                  {String.fromCharCode(65 + index)}.
+                </span>
 
-              const isSelected =
-                answers[currentQuestion.id] === opt
-
-              return (
-                <label
-                  key={opt}
-                  className={`flex cursor-pointer items-center gap-4 rounded-2xl border-2 border-black p-4 font-bold transition-all ${
-                    isSelected
-                      ? "bg-blue-500 text-white shadow-[3px_4px_0px_#000]"
-                      : "bg-[#f5faff] hover:-translate-y-1 hover:bg-blue-50 hover:shadow-[3px_4px_0px_#000]"
-                  }`}
-                >
-
-                  <input
-                    type="radio"
-                    name={`q-${currentQuestion.id}`}
-                    checked={answers[currentQuestion.id] === opt}
-                    onChange={() =>
-                      handleSelect(currentQuestion.id, opt)
-                    }
-                    className="h-5 w-5 accent-blue-600"
-                  />
-
-                  <span>
-                    {currentQuestion[`option_${opt}`]}
-                  </span>
-
-                </label>
-              )
-            })}
+                {option}
+              </button>
+            ))}
 
           </div>
 
-
-          {/* Navigation */}
-
-          <div className="mt-8 flex justify-between border-t-2 border-slate-200 pt-6">
+          {/* Next Button */}
+          <div className="flex justify-end mt-8">
 
             <button
-              onClick={handleBack}
-              disabled={currentIndex === 0}
-              className="rounded-full border-2 border-black bg-white px-7 py-3 font-black shadow-[3px_4px_0px_#000] transition-all hover:-translate-x-1 disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
+              onClick={handleNext}
+              disabled={!selectedAnswer}
+              className="bg-[#006B7A] text-white px-8 py-3 rounded-xl disabled:opacity-40"
             >
-              ← Back
+              {currentQuestion === questions.length - 1
+                ? "Submit Quiz"
+                : "Next"}
             </button>
-
-
-            {isLastQuestion ? (
-
-              <button
-                onClick={handleSubmit}
-                disabled={!hasAnswered || loading}
-                className="rounded-full border-2 border-black bg-amber-400 px-7 py-3 font-black shadow-[4px_5px_0px_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_3px_0px_#000] disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
-              >
-                {loading ? 'Submitting...' : 'Submit Quiz ✓'}
-              </button>
-
-            ) : (
-
-              <button
-                onClick={handleNext}
-                disabled={!hasAnswered}
-                className="rounded-full border-2 border-black bg-blue-500 px-8 py-3 font-black text-white shadow-[4px_5px_0px_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-[2px_3px_0px_#000] disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none"
-              >
-                Next →
-              </button>
-
-            )}
 
           </div>
 
@@ -214,5 +146,7 @@ export default function QuizClient({question}){
       </div>
 
     </div>
-   )
-}
+  );
+};
+
+export default QuizClient;

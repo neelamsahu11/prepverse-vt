@@ -40,11 +40,12 @@ const handleSubmit = async (e: FormEvent) => {
 
     const result = await LoginAction(LoginData);
 
-    if (result.success) {
-        router.push("/");
-    } else {
-        alert(result.message);
-    }
+   if (result.success) {
+    router.push("/dashboard");
+    router.refresh();
+} else {
+    alert(result.message);
+}
 };
 
     return (

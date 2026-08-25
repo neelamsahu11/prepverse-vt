@@ -1,0 +1,247 @@
+{
+  "quizzes": {
+    "1": {
+      "module": "Earthquakes",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What are the three basic steps to follow during an earthquake?",
+          "options": [
+            "Run, Jump, Hide",
+            "Drop, Cover, Hold On",
+            "Stand, Watch, Move",
+            "Climb, Cover, Run"
+          ],
+          "correct_answer": "Drop, Cover, Hold On"
+        },
+        {
+          "id": 2,
+          "question": "What is the main cause of most earthquakes?",
+          "options": [
+            "Heavy rainfall",
+            "Movement along faults in the Earth's crust",
+            "Strong winds",
+            "Ocean tides"
+          ],
+          "correct_answer": "Movement along faults in the Earth's crust"
+        },
+        {
+          "id": 3,
+          "question": "What should you do during an earthquake if you are indoors?",
+          "options": [
+            "Run outside immediately",
+            "Stand near a window",
+            "Take cover under a sturdy table or desk",
+            "Use the elevator"
+          ],
+          "correct_answer": "Take cover under a sturdy table or desk"
+        },
+        {
+          "id": 4,
+          "question": "Which of the following is NOT a reliable warning sign of a major earthquake?",
+          "options": [
+            "Official emergency alerts",
+            "Unusual animal behavior",
+            "Seismic monitoring information",
+            "Emergency authority instructions"
+          ],
+          "correct_answer": "Unusual animal behavior"
+        },
+        {
+          "id": 5,
+          "question": "What should you do after an earthquake?",
+          "options": [
+            "Immediately return to damaged buildings",
+            "Ignore aftershocks",
+            "Check for injuries and watch for hazards",
+            "Use elevators in damaged buildings"
+          ],
+          "correct_answer": "Check for injuries and watch for hazards"
+        }
+      ]
+    },
+
+    "2": {
+      "module": "Flood Safety",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What should you do when floodwater starts rising?",
+          "options": [
+            "Move to lower ground",
+            "Move to higher ground",
+            "Walk through the water",
+            "Stay inside a vehicle"
+          ],
+          "correct_answer": "Move to higher ground"
+        },
+        {
+          "id": 2,
+          "question": "Why should you avoid walking through moving floodwater?",
+          "options": [
+            "It is always cold",
+            "It can contain hidden hazards and strong currents",
+            "It makes roads slippery only",
+            "It damages shoes"
+          ],
+          "correct_answer": "It can contain hidden hazards and strong currents"
+        },
+        {
+          "id": 3,
+          "question": "Which of the following can cause flooding?",
+          "options": [
+            "Heavy rainfall",
+            "Blocked drains",
+            "Overflowing rivers",
+            "All of the above"
+          ],
+          "correct_answer": "All of the above"
+        },
+        {
+          "id": 4,
+          "question": "What should you do if authorities issue an evacuation order during a flood?",
+          "options": [
+            "Ignore it until water enters your home",
+            "Follow the evacuation instructions",
+            "Drive through flooded roads",
+            "Wait for social media updates only"
+          ],
+          "correct_answer": "Follow the evacuation instructions"
+        },
+        {
+          "id": 5,
+          "question": "Why should you avoid touching electrical equipment while standing in floodwater?",
+          "options": [
+            "It may cause equipment damage only",
+            "It may create an electrical shock hazard",
+            "It makes the water dirty",
+            "It slows down evacuation"
+          ],
+          "correct_answer": "It may create an electrical shock hazard"
+        }
+      ]
+    },
+
+    "3": {
+      "module": "Fire Safety",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What three things are required for the basic fire triangle?",
+          "options": [
+            "Smoke, water and fuel",
+            "Heat, fuel and oxygen",
+            "Heat, smoke and water",
+            "Oxygen, smoke and electricity"
+          ],
+          "correct_answer": "Heat, fuel and oxygen"
+        },
+        {
+          "id": 2,
+          "question": "What should you do first when you discover a fire?",
+          "options": [
+            "Hide the fire",
+            "Raise the alarm and inform people nearby",
+            "Use an elevator",
+            "Return to collect belongings"
+          ],
+          "correct_answer": "Raise the alarm and inform people nearby"
+        },
+        {
+          "id": 3,
+          "question": "What should you do if smoke is present during a fire?",
+          "options": [
+            "Stay low to the ground",
+            "Stand near the ceiling",
+            "Use an elevator",
+            "Open every window"
+          ],
+          "correct_answer": "Stay low to the ground"
+        },
+        {
+          "id": 4,
+          "question": "Which fire should NOT normally be fought with water?",
+          "options": [
+            "A fire involving ordinary paper",
+            "An energized electrical fire",
+            "A fire involving untreated wood",
+            "A fire involving cloth"
+          ],
+          "correct_answer": "An energized electrical fire"
+        },
+        {
+          "id": 5,
+          "question": "When should you NOT attempt to use a fire extinguisher?",
+          "options": [
+            "When the fire is small and contained",
+            "When you are trained and have a safe exit",
+            "When the fire is large, spreading or producing heavy smoke",
+            "When the correct extinguisher is available"
+          ],
+          "correct_answer": "When the fire is large, spreading or producing heavy smoke"
+        }
+      ]
+    },
+
+    "4": {
+      "module": "Medical Emergency & First Aid",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What should you do before helping an injured person?",
+          "options": [
+            "Immediately move them",
+            "Check whether the scene is safe",
+            "Give them food",
+            "Ask them to stand"
+          ],
+          "correct_answer": "Check whether the scene is safe"
+        },
+        {
+          "id": 2,
+          "question": "What should you do for a suspected fracture?",
+          "options": [
+            "Straighten the injured area",
+            "Massage the injured area",
+            "Keep the area as still as reasonably possible",
+            "Force the person to walk"
+          ],
+          "correct_answer": "Keep the area as still as reasonably possible"
+        },
+        {
+          "id": 3,
+          "question": "What should you NOT do during a seizure?",
+          "options": [
+            "Remove nearby hazards",
+            "Protect the person's head if possible",
+            "Put something in the person's mouth",
+            "Monitor the person"
+          ],
+          "correct_answer": "Put something in the person's mouth"
+        },
+        {
+          "id": 4,
+          "question": "What is recommended for cooling a minor thermal burn?",
+          "options": [
+            "Apply ice directly",
+            "Apply toothpaste",
+            "Use cool running water",
+            "Apply cooking oil"
+          ],
+          "correct_answer": "Use cool running water"
+        },
+        {
+          "id": 5,
+          "question": "What should you do if a person may still be connected to an electrical source?",
+          "options": [
+            "Touch them immediately",
+            "Pull them away with bare hands",
+            "Do not touch them until the electrical hazard is safely isolated",
+            "Pour water on them"
+          ],
+          "correct_answer": "Do not touch them until the electrical hazard is safely isolated"
+        }
+      ]
+    }
+  }
+}

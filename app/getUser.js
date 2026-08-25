@@ -67,6 +67,13 @@ export async function getLoggedInUser() {
             [userId]
         );
 
+        console.log("=================================");
+console.log("DASHBOARD USER ID:", userId);
+console.log("DASHBOARD USER:", user);
+console.log("DASHBOARD BADGES:", badges);
+console.log("DASHBOARD CERTIFICATES:", certificates);
+console.log("=================================");
+
         return {
             ...user,
             badges,
