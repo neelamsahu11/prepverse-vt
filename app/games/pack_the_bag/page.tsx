@@ -2,7 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-const items = [
+type EmergencyItem = {
+  id: number;
+  name: string;
+  icon: string;
+  correct: boolean;
+};
+
+const items: EmergencyItem[] = [
   { id: 1, name: "Water", icon: "💧", correct: true },
   { id: 2, name: "Flashlight", icon: "🔦", correct: true },
   { id: 3, name: "First Aid", icon: "🩹", correct: true },
@@ -19,11 +26,16 @@ const MAX_ITEMS = 8;
 const GAME_TIME = 30;
 
 export default function EmergencyBag() {
-  const [selectedItems, setSelectedItems] = useState([]);
+ const [selectedItems, setSelectedItems] = useState<EmergencyItem[]>([]);
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(GAME_TIME);
   const [gameOver, setGameOver] = useState(false);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState<{
+  score: number;
+  correctItems: number;
+  wrongItems: number;
+  missingItems: number;
+} | null>(null);
 
   /* Timer */
   useEffect(() => {
@@ -42,7 +54,7 @@ export default function EmergencyBag() {
   }, [time, gameOver]);
 
   /* Select item */
-  const handleItemClick = (item) => {
+  const handleItemClick = (item: EmergencyItem) => {
     if (gameOver) return;
 
     const alreadySelected = selectedItems.some(
@@ -63,7 +75,7 @@ export default function EmergencyBag() {
   };
 
   /* Remove item */
-  const removeItem = (item) => {
+  const removeItem = (item: EmergencyItem) => {
     if (gameOver) return;
 
     setSelectedItems((prev) =>
