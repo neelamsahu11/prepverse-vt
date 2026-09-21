@@ -43,6 +43,21 @@ interface RegisterFormData{
 
     const result = await RegistrationAction(RegisterData);
 
+
+    console.log("REGISTER BUTTON CLICKED");
+
+console.log("API URL:", YOUR_API_URL);
+
+const response = await fetch(YOUR_API_URL, {
+  // existing options
+});
+
+console.log("RESPONSE STATUS:", response.status);
+
+const data = await response.json();
+
+console.log("RESPONSE DATA:", data);
+
     if (result.success) {
         router.push("/login");
     } else {
