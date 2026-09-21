@@ -30,40 +30,81 @@ interface RegisterFormData{
         }))
     }
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    console.log("REGISTER BUTTON CLICKED");
 
-    const RegisterData = {
-        name: formData.name.trim(),
-        email: formData.email.trim(),
-        password: formData.password.trim(),
-        conformPassword: formData.conformPassword.trim(),
-    };
+    const handleSubmit = async (e: FormEvent) => {
+  e.preventDefault();
 
-    const result = await RegistrationAction(RegisterData);
+  console.log("REGISTER BUTTON CLICKED");
 
+  const RegisterData = {
+    name: formData.name.trim(),
+    email: formData.email.trim(),
+    password: formData.password.trim(),
+    conformPassword: formData.conformPassword.trim(),
+  };
 
-    console.log("REGISTER BUTTON CLICKED");
+  const result = await RegistrationAction(RegisterData);
 
-console.log("API URL:", YOUR_API_URL);
+  console.log("REGISTRATION RESULT:", result);
 
-const response = await fetch(YOUR_API_URL, {
-  // existing options
-});
-
-console.log("RESPONSE STATUS:", response.status);
-
-const data = await response.json();
-
-console.log("RESPONSE DATA:", data);
-
-    if (result.success) {
-        router.push("/login");
-    } else {
-        alert(result.message);
-    }
+  if (result.success) {
+    router.push("/login");
+  } else {
+    console.error("REGISTRATION FAILED:", result.message);
+    alert(result.message);
+  }
 };
+
+// const handleSubmit = async (e: FormEvent) => {
+//   e.preventDefault();
+
+//   console.log("REGISTER BUTTON CLICKED");
+
+//   const RegisterData = {
+//     name: formData.name.trim(),
+//     email: formData.email.trim(),
+//     password: formData.password.trim(),
+//     conformPassword: formData.conformPassword.trim(),
+//   };
+
+//   try {
+//     const result = await RegistrationAction(RegisterData);
+
+//     console.log("REGISTRATION RESULT:", result);
+
+//     if (result.success) {
+//       router.push("/login");
+//     } else {
+//       console.error("REGISTRATION FAILED:", result.message);
+//       alert(result.message);
+//     }
+//   } catch (error) {
+//     console.error("REGISTRATION ERROR:", error);
+//     alert("Something went wrong");
+//   }
+// };
+
+//   const handleSubmit = async (e: FormEvent) => {
+//     e.preventDefault();
+//     console.log("REGISTER BUTTON CLICKED");
+
+//     const RegisterData = {
+//         name: formData.name.trim(),
+//         email: formData.email.trim(),
+//         password: formData.password.trim(),
+//         conformPassword: formData.conformPassword.trim(),
+//     };
+
+//     const result = await RegistrationAction(RegisterData);
+
+
+    
+//     if (result.success) {
+//         router.push("/login");
+//     } else {
+//         alert(result.message);
+//     }
+// };
 
     
     
