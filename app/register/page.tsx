@@ -32,6 +32,7 @@ interface RegisterFormData{
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    console.log("REGISTER BUTTON CLICKED");
 
     const RegisterData = {
         name: formData.name.trim(),
